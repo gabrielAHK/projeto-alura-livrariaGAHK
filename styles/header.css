@@ -1,0 +1,71 @@
+.cabeçalho{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+:root{
+  --fonte-principal: "Open Sans";
+}
+
+.logo{
+    width: 35%;
+   
+}
+
+.linha{
+color: white;
+width: 30px;
+height: 1px;
+border-color: white;
+margin-left: 10px;
+}
+
+.sobre{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 0px;
+}
+
+.container{
+   display: flex ;
+   align-items: center;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    margin-left: 2px;
+}
+
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item{
+    padding: 10px;
+    background-color: white;
+    width: 40vw;
+    text-align: center;
+}
+
+.lista-menu__titulo{
+     color: #0097b2;
+     font-weight: 700;
+     font-family: var(--fonte-principal);
+}
+
+.lista-menu__link{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.container__botao{
+    display: none;
+}

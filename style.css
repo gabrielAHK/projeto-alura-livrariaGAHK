@@ -1,0 +1,24 @@
+@import url(styles/header.css);
+@import url(styles/banner.css);
+
+:root{
+    --fonte-principal: "Open Sans";
+  }
+  
+body{
+    background-color: #0097b2;
+}
+
+.texto__apresentação{
+  color: white;
+  font-family: var(--fonte-principal);
+  font-size: 25px;
+  text-align: center;
+  margin: 25px auto 0 25px;
+  font-weight: 600;
+}
+
+.imagem__estante{
+   size: 100%;
+   margin-top: 10px;
+}
