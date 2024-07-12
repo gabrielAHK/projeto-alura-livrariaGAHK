@@ -1,5 +1,6 @@
 @import url(styles/header.css);
 @import url(styles/banner.css);
+@import url(styles/carrosel.css);
 
 :root{
     --fonte-principal: "Open Sans";
@@ -21,4 +22,26 @@ body{
 .imagem__estante{
    size: 100%;
    margin-top: 10px;
+}
+
+.card{
+  background-color: white;
+  margin: 1.5cm;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card__texto{
+  font-family: var(--fonte-principal);
+  font-size: 23px;
+  font-weight: 700;
+  padding-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.card__imagem{
+  width: 150px;
+  margin-bottom: 1em;
 }

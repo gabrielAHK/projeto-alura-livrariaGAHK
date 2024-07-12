@@ -1,0 +1,29 @@
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next{
+display: none;
+}
+
+.carrosel{
+    background-color: #7ec1ff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+}
+
+.linha1, .linha2{
+    width: 100%;
+    height: 1px;
+    color: black;
+    background-color: black;
+    border-color: black;
+    margin: 0;
+}
+
+.linha1{
+    position: initial;
+    margin-bottom: 30px;
+}
+
