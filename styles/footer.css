@@ -1,0 +1,11 @@
+.linha11{
+    color: black;
+    border-color: black;
+}
+
+.rodape__texto{
+    font-family: var(--fonte-principal);
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 20px;
+}

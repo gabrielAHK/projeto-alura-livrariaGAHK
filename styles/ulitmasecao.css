@@ -1,0 +1,44 @@
+.div__oferta{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    text-align: center;
+}
+
+.container__oferta{
+    background-color: white;
+    border-radius: 15px;
+    padding: 1em;
+    margin: 1.5cm 0 1cm 2cm;
+    padding-bottom: 2em;
+}
+
+.oferta__texto{
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.oferta__preco{
+    font-size: 30px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.oferta__botao{
+    padding: 0.5em 1em;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    font-family: var(--fonte-principal);
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.imagem__oferta{
+    position: absolute;
+    display: block;
+    margin: 10px auto auto 10px;
+}

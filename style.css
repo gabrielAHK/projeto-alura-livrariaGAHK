@@ -1,6 +1,9 @@
 @import url(styles/header.css);
 @import url(styles/banner.css);
 @import url(styles/carrosel.css);
+@import url(styles/ulitmasecao.css);
+@import url(styles/contato.css);
+@import url(styles/footer.css);
 
 :root{
     --fonte-principal: "Open Sans";
@@ -20,13 +23,13 @@ body{
 }
 
 .imagem__estante{
-   size: 100%;
    margin-top: 10px;
+   width: 100%;
 }
 
 .card{
   background-color: white;
-  margin: 1.5cm;
+  margin: 1.5cm 1.5cm 0 1.5cm;
   border-radius: 10px;
   text-align: center;
 }
