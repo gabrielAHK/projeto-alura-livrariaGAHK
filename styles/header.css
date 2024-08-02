@@ -27,6 +27,7 @@ margin-left: 10px;
     text-decoration: none;
     font-size: 15px;
     margin: 10px;
+    font-family: var(--fonte-principal);
 }
 
 .container{
@@ -67,5 +68,99 @@ margin-left: 10px;
 }
 
 .container__botao{
+    display: none
+}
+
+.lupa__tablet{
     display: none;
+}
+
+.container__botao-tablet{
+    display: none;
+}
+
+.barra__pesquisa{
+    display: none;
+}
+
+.livraria__header{
+    display:none;
+}
+
+@media screen and (min-width: 1024px){
+ 
+    .banner__pesquisa{
+        display: none;
+    }
+
+    .sobre{
+        font-size: 30px;
+        margin-right: 25px;
+    }
+
+    .linha{
+        width: 70px;
+        height: 3px;
+        background-color: white;
+        margin-bottom: 1em;
+        margin-left: 30px;
+    }
+
+    .logo{
+        margin-left: 2em;
+        margin-right: auto;
+    }
+
+    .lista-menu__link{
+        font-size: 35px;
+    }
+
+    .lista-menu__titulo{
+        font-size: 35px;
+        padding-bottom: 1em;
+    }
+
+    .lupa__tablet{
+        display: flex;
+        width: 60px;
+        margin-right: 3em;
+
+    }
+
+    .barra__pesquisa{
+        display: none;
+    }
+
+    .container__botao-tablet:checked~.barra__pesquisa{
+        display: flex;
+        padding: 5px;
+        font-family: var(--fonte-principal);
+        font-size: 20px;
+        border-radius: 15px;
+        margin-right:2em;
+        border: 1px solid black;
+    
+    }
+
+}
+
+@media screen and (min-width: 1728px){
+    .livraria__header{
+        display:block;
+        font-family: var(--fonte-principal);
+        margin-right: 0;
+        font-size: 115px;
+        color: white;
+        margin-left: 0.5em;
+        font-weight: 700;
+    }
+
+    .logo{
+        width: 25%;
+    }
+
+    .container__botao-tablet:checked~.barra__pesquisa{
+        padding: 0.3em 0.6em;
+        font-size: 30px;
+    }
 }

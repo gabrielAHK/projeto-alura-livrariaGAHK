@@ -27,24 +27,61 @@ body{
    width: 100%;
 }
 
-.card{
-  background-color: white;
-  margin: 1.5cm 1.5cm 0 1.5cm;
-  border-radius: 10px;
-  text-align: center;
+.imagem__apresentação{
+  display:none;
 }
 
-.card__texto{
-  font-family: var(--fonte-principal);
-  font-size: 23px;
-  font-weight: 700;
-  padding-top: 0.5em;
-  margin-bottom: 0.5em;
-  padding-left: 2em;
-  padding-right: 2em;
+.imagem__apresentação-pc{
+  display: none;
 }
 
-.card__imagem{
-  width: 150px;
-  margin-bottom: 1em;
+@media screen and (min-width: 1024px){
+
+    .apresentação{
+      display: flex;
+    }
+
+    .imagem__apresentação{
+      display: block;
+      width:  60%;
+      margin: auto 3em 25px 3em;
+    }
+
+    .texto__apresentação{
+      text-align: right;
+      font-size: 36px;
+      margin-left: 2em;
+      font-weight:600;
+    }
+
+    .imagem__estante{
+      width: 90%;
+      margin: 0 auto 0 auto;
+      display:block;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+
+
+}
+
+@media screen and (min-width: 1728px) {
+
+  .imagem__apresentação{
+    display: none;
+  }
+
+  .imagem__apresentação-pc{
+    display: block;
+    margin-right: 0;
+    height: 310px;
+    margin-top: 40px;
+  }
+
+  .texto__apresentação{
+    margin-top: 30px;
+    font-size: 80px;
+    margin-left: 0.5em;
+    margin-bottom:2em;
+  }
 }

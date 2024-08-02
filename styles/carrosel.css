@@ -11,19 +11,32 @@ display: none;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
-.linha1, .linha2{
-    width: 100%;
-    height: 1px;
-    color: black;
-    background-color: black;
-    border-color: black;
-    margin: 0;
+.swiper-scrollbar{
+    display: none;
 }
 
-.linha1{
-    position: initial;
-    margin-bottom: 30px;
+
+@media screen and (min-width: 1024px){
+    
+    .swiper-slide img{
+        width: 180px;
+    }
+
+    .carrosel{
+        margin: 20px 6em;
+        border:2px solid black;
+        border-radius: 15px;
+    }
+
 }
+
+@media screen and (min-width: 1728px){
+    .carrosel{
+        margin: 5em 20em;
+    }
+    }
 

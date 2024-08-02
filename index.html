@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="body">
     <header class="cabeçalho">
         <input type="checkbox" id="menu" class="container__botao">
         <label for="menu">
@@ -26,7 +26,14 @@
             <li class="lista-menu__item"><a href="#" class="lista-menu__link">Aventura</a></li>
             <li class="lista-menu__item"><a href="#" class="lista-menu__link">Terror</a></li>
         </ul>
-       <div class="container"></div><img src="img/logoGAHK.png" alt="logo Livraria GAHK" class="logo"></div>
+       <div class="container"></div><P class="livraria__header">Livraria</P><img src="img/logoGAHK.png" alt="logo Livraria GAHK" class="logo"></div>
+       <div class="container"> 
+            <input type="checkbox" id="pesquisa" class="container__botao-tablet">
+            <label for="pesquisa">
+                <img src="img/lupa__fundo-azul.png" alt="imagem de uma lupa" class="lupa__tablet">
+            </label>
+            <input type="text" class="barra__pesquisa">
+       </div>
        <div class="container"></div><a href="#" class="sobre"><p>sobre</p></a></div>
     </header>
 
@@ -34,16 +41,21 @@
         <input type="search" class="banner__pesquisa" placeholder="Buscar">
     </section>
 
-    <section>
+    <section class="apresentação">
         <p class="texto__apresentação">A Livraria GAHK é a livraria do futuro, onde você assina um plano e tem acesso a diversos livros online dos mais variados assuntos.</p>
+        <img src="img/caboco-rodeadodetela.png" alt="homen" class="imagem__apresentação">
+        <img src="img/caboco.computador.png" alt="homen" class="imagem__apresentação-pc">
     </section>
 
-    <section>
+    <section class="estante">
         <img src="img/livros.png" alt="estante de livros" class="imagem__estante">
+        <div class="card cardpc">
+            <h2 class="card__texto">Livro mais lido do mês:</h2>
+            <img src="img/O pequeno príncipe.png" alt="capa do livro o pequeno príncipe" class="card__imagem">
+        </div>
     </section>
 
     <section class="carrosel">
-        <hr class="linha1">
         <!-- Slider main container -->
 <div class="swiper">
     <!-- Additional required wrapper -->
@@ -65,17 +77,14 @@
     <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
   </div>
-  <hr class="linha2">
     </section>
 
-    <section>
+    <section class="cards__celular">
         <div class="card">
             <h2 class="card__texto">Livro mais lido do mês:</h2>
             <img src="img/O pequeno príncipe.png" alt="capa do livro o pequeno príncipe" class="card__imagem">
         </div>
-    </section>
-
-    <section>
+ 
         <div class="div__oferta">
             <div>
                     <img src="img/oferta.png" alt="oferta" class="imagem__oferta">
@@ -84,13 +93,46 @@
                     <p class="oferta__preco">R$200,00</p>
                     <a href="#" class="oferta__botao">Assine já!</a>
                 </div>
+                    
             </div>
-            <div class="contato">
+                <div class="contato">
                 <h2 class="contato__titulo">Fique por dentro das ofertas:</h2>
                 <input type="email" placeholder="Seu email" class="contato__email">
-                <p class="contato__texto">Receba emails de nossa empresa alertado-o sobre nossas ofertas</p>
+                <p class="contato__texto">Receba emails de nossa empresa alertado-o sobre nossas ofertas.</p>
             </div>
         </div>
+    </section>
+
+    <section class="cards__tablet">
+    <div class="divisao__tablet">
+            <div class="card">
+                <h2 class="card__texto">Livro mais lido do mês:</h2>
+                <img src="img/O pequeno príncipe.png" alt="capa do livro o pequeno príncipe" class="card__imagem">
+            </div>
+ 
+    
+        <div class="card__oferta">
+                <img src="img/oferta.png" alt="oferta" class="imagem__oferta">
+            <div class="container__oferta">
+                <p class="oferta__texto">Assine agora o plano anual de R$240,00 por apenas :</p>
+                <p class="oferta__preco">R$200,00</p>
+                <a href="#" class="oferta__botao">Assine já!</a>
+            </div>
+        </div>
+            <a href="#" class="oferta__botao oferta__botaopc">Assine já!</a>
+    </div>
+        
+        <div class="divcontato">  
+            <div>
+                <h2 class="contato__titulo">Fique por dentro das ofertas:</h2>
+                <p class="contato__texto">Receba emails de nossa empresa alertado-o sobre nossas ofertas.</p>
+            </div>
+            <div>
+                <input type="email" placeholder="Seu email" class="contato__email">
+            </div>
+        </div> 
+          
+
     </section>
 
     <hr class="linha11">
@@ -105,6 +147,7 @@
             spaceBetween: 15,
             slidesPerView: 3,
         });
+
     </script>
 </body>
 

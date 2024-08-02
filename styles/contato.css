@@ -22,3 +22,61 @@
     font-family: var(--fonte-principal);
     font-size: 10px;
 }
+
+@media screen and (min-width: 1024px) {
+    .divcontato{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+        margin-top: 3em;
+    }
+
+    .contato__titulo{
+        font-size: 30px;
+    }
+
+    .contato__texto{
+        font-size: 15px;
+        margin-top: 10px;
+        padding: 0px 3.5em;
+        margin-bottom: 2em;
+    }
+
+    .contato__titulo, .contato__texto{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .contato__email{
+        border-radius: 30px;
+        padding: 1em 0.6em;
+        font-size: 20px;
+        margin: 3em auto auto 2em;
+        border:none;
+        display: block;
+    }
+
+    .contato__email::placeholder{
+        font-family: var(--fonte-principal);
+        font-size: 25px;
+        background: url("../img/lupa.png") no-repeat;
+        background-size: 35px;
+        text-align: center;
+        background-position: 0.5em;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .contato__texto{
+        font-size: 25px;
+    }
+
+    .contato__titulo{
+        font-size: 40px;
+    }
+
+    .contato__email{
+        font-size: 25px;
+        margin-top: 2em ;
+    }
+}
