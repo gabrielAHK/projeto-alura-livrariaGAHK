@@ -140,6 +140,14 @@
         width: 160px;
         margin: -35px auto auto -25px;
      }
+     
+     .oferta__botao:hover{
+        background-color: rgb(65, 65, 65);
+    }
+
+    .oferta__botao:active{
+        background-color: blue;
+    }
 }
 
 @media screen and (min-width: 1728px){
@@ -212,5 +220,7 @@
         border-radius: 50px;
     }
 
+
+    
 }
 
